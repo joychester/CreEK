@@ -1,5 +1,5 @@
 # CreEK
-C: Confluent, E: Elasticsearch, K: Kibana
+C: Confluent (v5.0), E: Elasticsearch (v6.3), K: Kibana (v6.3)
 
 How a CreEK is formed: 
 > * Send Messages by Kafka REST Proxy --> Kafka Topics --> Kafka Elasticsearch (Sink) Connector --> Elasticsearch --> Kibana

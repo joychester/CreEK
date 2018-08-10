@@ -25,7 +25,7 @@ How a CreEK is formed:
 
 
 ------
-#### Inside of ./confluent start CLI => The equivalent commands to start every service in its own terminal:
+#### PS. Inside of ./confluent start CLI => The equivalent commands to start every service in its own terminal:
 > * Start ZooKeeper.  Run this command in its own terminal.
 >>> $ ./bin/zookeeper-server-start ./etc/kafka/zookeeper.properties
 > * Start Kafka.  Run this command in its own terminal.

@@ -22,3 +22,15 @@ How a CreEK is formed:
 * Check Kafak elasticsearch connector status: ```curl localhost:8083/connectors/elastic-connect-test/status``` , if there is anything wrong with the connector, you have to delete the connector first and recreated the connector: ```curl -X DELETE localhost:8083/connectors/elastic-connect-test```
 * Start to Sink your data to Kafka Topics(Jenkins + JMeter in my case), and the Data will move to right away, manage your index through Kibana directly
 * Create create visualizations of the data and make your own Dashboards in Kibana
+
+
+------
+#### Inside of ./confluent start CLI => The equivalent commands to start every service in its own terminal:
+> * Start ZooKeeper.  Run this command in its own terminal.
+>>> $ ./bin/zookeeper-server-start ./etc/kafka/zookeeper.properties
+> * Start Kafka.  Run this command in its own terminal.
+>>> $ ./bin/kafka-server-start ./etc/kafka/server.properties
+> * Start Schema Registry. Run this command in its own terminal.
+>>> $ ./bin/schema-registry-start ./etc/schema-registry/schema-registry.properties
+> * Start Connect in distributed mode. Run this command in its own terminal.
+>>> $ ./bin/connect-distributed ./etc/schema-registry/connect-avro-distributed.properties

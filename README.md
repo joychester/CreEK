@@ -15,6 +15,7 @@ How a CreEK is formed:
 > * run ```./elasticsearch -d```
 * Start Kibana service: 
 > * edit config/kibana.yml => server.host: "0.0.0.0"
+> * add $NODE_OPTIONS --max-old-space-size=2048 to NODE_ENV in bin/kibana file
 > * run ```nohup ./kibana &```
 * Create Kafka Topics: ```./kafka-topics --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic my_first_topic```
 * (optional) Produce and Consume the message to valiadte the topic been created

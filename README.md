@@ -4,6 +4,8 @@ C: Confluent (v5.0), E: Elasticsearch (v6.3), K: Kibana (v6.3)
 How a CreEK is formed: 
 > * Send Messages by Kafka REST Proxy --> Kafka Topics --> Kafka Elasticsearch (Sink) Connector --> Elasticsearch --> Kibana
 
+![creek_flowchart](creek.png)
+
 ## Start Confluent services:
 
 * (optional) Modify ```/etc/schema-registry/connect-avro-distributed.properties``` if want to disable avro schema validation and use plain JSON data, check out the sample file in the repo
